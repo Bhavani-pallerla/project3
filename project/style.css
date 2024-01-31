@@ -1,0 +1,427 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    position: relative;
+    background: linear-gradient(to top, rgb(0,0,0,0.7 ), rgb(0,0,0,0.7)), url(image1.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.icon{
+    position: absolute;
+    top: 10px;
+    left:14px
+}
+.logo{
+    font-family: Arial;
+    color: rgb(218, 241, 15);
+    font-size: 40px;
+}
+.nav{
+    width: 100vw;
+}
+.nav ul{
+height: 40px;
+list-style: none;
+margin-left: 240px;
+margin-right: 20px;
+float: left;
+}
+.nav ul li{
+    display: flex;
+    float: left;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-family: sans-serif;
+    transition: 0.5s ease;
+}
+.nav ul li a:hover{
+    color: rgb(218, 241, 15);
+}
+.search{
+    float: right;
+    margin-top: 16px;
+    margin-right: 20px;
+}
+.search input{
+    float: left;
+    height: 22px;
+    width: 250px;
+    background: transparent;
+    color: white;
+    border: 1px solid rgb(218, 241, 15) ;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 4px;
+    font-size: 16px;
+}
+.search input:focus{
+    outline:none;
+}
+.search button{
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 60px;
+    height: 32px;
+    border: none;
+    background-color: rgb(218, 241, 15);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+    transition: 0.6 ease;
+}
+.search button:hover{
+    background-color: #fff;
+}
+.content{
+    color:white;
+    clear: both;
+    width: 60vw;
+    padding-top: 100px;
+    padding-left: 40px;
+    float: left;
+
+    /* border: 1px solid white; */
+}
+.content h1{
+    font-family: Arial;
+    font-size: 58px;
+    letter-spacing: 2px;
+}
+.content h1 span{
+    color: rgb(218, 241, 15) ;
+    font-size: 64px;
+}
+.content p{
+    font-size: 20px;
+    padding: 5px;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+}
+.btn{
+    width: 120px;
+    height: 36px;
+    font-size: 16px;
+    background-color:  rgb(218, 241, 15);
+    border: none;
+    border-radius:8px ;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color:#f77801;
+}
+.cn_btn{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.form{
+    color: #fff;
+    background: linear-gradient(to top, rgb(0,0,0,0.3),rgb(0,0,0,0.3));
+    width: 300px;
+    height: 400px;
+    float: right;
+    margin-top: 80px;
+    margin-right: 30px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0px 0px 10px #7e7b7b;
+}
+.form h2{
+font-family: Arial;
+line-height: 44px;
+height: 44px;
+background-color: #e5740adb;
+border-radius: 10px;
+margin-bottom: 10px;
+}
+.form input{
+    width: 100%;
+    height: 40px;
+    margin-top: 14px;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid  rgb(218, 241, 15) ;
+    font-size: 16px;
+}
+.li_btn{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+.link{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+}
+.link a{
+    text-decoration: none;
+    color: #f77801;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+.link a:hover{
+    color: rgb(218, 241, 15)
+}
+.liw{
+    font-size: 20px;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+.icons ion-icon{
+    font-size: 36px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.icons ion-icon:first-child{
+    margin-left: 0%;
+}
+.icons ion-icon:hover{
+    color: rgb(218, 241, 15);
+}
+/* Responsive CSS */
+@media screen and (max-width:1200px){
+    .logo{
+        font-size:3.5vm;
+    }
+    .nav ul{
+        /* float: none; */
+        width: 50vw;
+    }
+    .nav ul li a{
+        font-size: 1.6vw;
+    }
+    .content h1{
+        font-size: 5vw;
+    }
+    .content h1 span{
+        font-size: 6vw;
+    }
+    .content p{
+        font-size: 2.3vw;
+    }
+    .cn_btn{
+        width: 16vw;
+        height: 5vh;
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width:1150px) {
+    .nav ul{
+        margin-left:180px;
+    }
+}
+@media screen and (max-width:768px) {
+    .search{
+        margin-right: 250px;
+    }
+    .main{
+        height: 150vh;
+    }
+    .content{
+        float: none;
+    }
+    .form{
+        float: none;
+        margin: auto;
+    }
+}
+@media screen and(max-width:1011px){
+    .main{
+        height: 150vh;
+    }
+    .logo{
+        font-size: 4.2vw;
+    }
+    .nav ul{
+        width:auto;
+        float: none;
+    }
+    .search{
+        float: left;
+        clear: both;
+        margin-left: 230px;
+        padding-top: 14px;
+    }
+    .nav li a{
+        font-size: 1.6vw;
+    }
+    .content{
+        padding-top: 100px;
+        width: 95vw;
+        padding-left: 5vw;
+    }
+    .content h1{
+        font-size: 7.2vw;
+    }
+    .content h1 span{
+        font-size: 8.1vw;
+    }
+    .content p{
+        font-size:2.5vw;
+    }
+    .cn_btn{
+        font-size: 2.1vw;
+    }
+    .form{
+        clear: both;
+        float: none;
+        margin: auto;
+    }
+}
+@media screen and (max-width:748px) {
+    .main{
+        height: 192vh;
+    }
+    .content{
+        float: none;
+    }
+    .form{
+        margin:auto;
+        float: none;
+        margin-top: 30px;
+    }
+    .search{
+        margin-right: 230px;
+    }
+    .icom{
+        left:199px;
+    }
+}
+@media screen and (max-width:740px) {
+    .icon{
+        /* left:265px; */
+        margin: auto;
+    }
+    .nav ul{
+        /* margin-top: 40px; */
+        float: none;
+    }
+   
+}
+@media screen and (max-width:550px) {
+    .search{
+        margin-right: 140px;
+    }
+    .search input{
+        width:105px;
+    }
+}
+@media screen and (max-width:426px) {
+    .main{
+        height:251vh;
+    }
+    .icon{
+        left:123px;
+    }
+    .nav ul li a{
+        font-size: 15px;
+    }
+    .search{
+        margin-right: 126px;
+    }
+    .content h1{
+        font-size: 10vw;
+    }
+    .content h1 span{
+        font-size: 13vw;
+    }
+    .content p{
+        font-size: 5vw;
+    }
+    .cn_btn{
+        width: 36vw;
+        font-size: 5vw;
+    }
+    .nav ul{
+        display: flex;
+        margin-left: 30px;
+    }
+    .nav{
+        padding-top:46px;
+    }
+}
+/* @media screen and (max-width:426px) {
+    .logo{
+        margin-left:110px;
+    } 
+    .nav ul{
+        display: flex;
+        margin-left: -2px;
+    }
+    .nav ul li a{
+        font-size: 18px;
+    }
+    .nav ul{
+        padding-top: 45px;
+        margin-left: 0px;
+    }
+}  */
+@media screen and (max-width:321px){
+    .icon{
+        left: 83px;
+    }
+    .nav ul{
+        margin-left: 48px;
+    }
+    .main{
+        width:129vw;
+    }
+    .icon{
+        margin-left:36px;
+    }
+    .search{
+        margin-right: 112px;
+    }
+}
+@media screen and (max-width:376px){
+    .nav ul li{
+        margin-left: 18px;
+    }
+    .search{
+        margin-right: 81px;
+    }
+}
+@media screen and (min-width:2560px) {
+    .content p{
+        font-size: 30px;
+        padding: 20px;
+    }
+    .btn{
+        width:180px;
+        height:80px;
+        font-size:30px;
+    }
+    .form{
+        height:440px;
+    }
+    .nav ul li a {
+        font-size:30px;
+    }
+    .search input {
+        width:360px;
+        height:55px;
+    }
+    .search button {
+        height:65px;
+        width:135px;
+    }
+    .form input{
+        font-size:20px;
+    }
+    .form{
+        padding:36px;
+    }
+}
